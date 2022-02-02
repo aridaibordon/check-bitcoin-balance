@@ -39,4 +39,5 @@ def get_total_balance(return_btc: bool=False, return_eur: bool=False) -> float:
 
 
 if __name__ == '__main__':
-    print(get_total_balance(return_eur=True))
+    total_balance = get_total_balance()
+    print(total_balance)
