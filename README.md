@@ -15,5 +15,5 @@ By default, [get_total_balance](main.py) returns the sum of all the balance in a
 
 By default, the output format of the balance is given in satoshis. Using the booleans `return_btc` and `return_eur` (which are set to False by default) alter this output:
 
-* If `return_eur` is set to True: The output will be given in euros. The conversion rate is extracted using the yfinance package.
+* If `return_eur` is set to True: The output will be given in euros. Conversion rate is extracted from yfinance.
 * If `return_btc` is set to True: The output will be given in bitcoins (1 BTC = 1e8 satoshis).
