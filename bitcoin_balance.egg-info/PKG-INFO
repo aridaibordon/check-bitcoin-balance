@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: bitcoin-balance
+Version: 0.0.1
+Summary: Check the balance of any bitcoin address
+Home-page: UNKNOWN
+Author: Aridai Bordón
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/aridaybordon/check-bitcoin-balance
+Description: UNKNOWN
+Keywords: bitcoin,crypto
+Platform: UNKNOWN
