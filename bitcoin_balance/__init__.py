@@ -27,7 +27,7 @@ def add_address(address, filename: str = ADDRESS_FILENAME) -> None:
 
 def get_address_balance(address: str,
                         return_btc: bool = False,
-                        return_dol: bool = False,
+                        return_usd: bool = False,
                         private_key: bool = False) -> float:
     """Return balance for a given BTC address"""
     r = requests.get(f"https://blockchain.info/rawaddr/{address}")
@@ -43,7 +43,7 @@ def get_address_balance(address: str,
     balance = data['final_balance'] / 1e8 if return_btc else data[
         'final_balance']
 
-    if return_dol:
+    if return_usd:
         btc_value = yf.Ticker('BTC-USD').history(period='1d')['Close'][0]
         return balance * btc_value / 1e8
 
