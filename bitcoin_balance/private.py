@@ -11,6 +11,9 @@ def get_public_address_from_private_key(private_key: str):
 
     Original code from Shlomi Zeltsinger (https://www.youtube.com/watch?v=tX-XokHf_nI).
 
+    ALWAYS REMEMBER TO KEEP YOUR PRIVATE KEYS SECRET. THE ACCESS OF A THIRD PARTY TO YOUR
+    KEYS COULD LEAD TO THE LOSE OF ALL YOUR FUNDS.
+
     """
     # WIF to private key by https://en.bitcoin.it/wiki/Wallet_import_format
     private_key = base58.b58decode_check(private_key) 
